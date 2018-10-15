@@ -34,7 +34,7 @@ Use the **New-VM cmdlet** to create a Generation 2 VM with specified memory size
     
     New-VM -Name "ProductionVM1" -MemoryStartupBytes 1GB -VHDPath c:\vhd\BaseImage.vhdx
 
-    Add-VMPmemController ProductionVM1x
+    Add-VMPmemController -VMName "ProductionVM1"
 
 ## Attach a persistent memory device to a VM
 
